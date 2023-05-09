@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;     
+}
+
+header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30px;
+    transition: background-color .5s linear;
+    /* background-color: red; */
+}
+
+header .nav-menu ul{
+    display: flex;
+    gap: 30px;
+    
+}
+
+main section{
+    height: 100vh;
+}
+
+.style-background{
+    background-color: aqua;
+}
+
+#servicos{
+    background-color: blueviolet;
+}
+
+#galeria{
+    background-color: darkblue;
+}
+
+#contato{
+    background-color: cadetblue;
+}
+
+.seta{
+    font-size: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    opacity: 0;
+    transition: 500ms;
+}
+.seta.active{
+    opacity: 1;
+    right: 30px;
+}
